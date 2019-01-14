@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam</title>
+    
+     <link href= "{{ static_url('css/webcam_styles.css')}}" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Monoton|Reenie+Beanie|Montserrat|Antic+Slab|Bangers|Julius+Sans+One" rel="stylesheet">
+
+</head>
+
+<body style="background-color:aliceblue;">
+    
+        <div class="sidenav">
+            <a href="https://www.youtube.com/watch?v=OnOFeK0FgQM" target="_blank"><img src="../webcam/images/JR.jpg" width=150 id=JRsidebar></a>
+  <a href="localhost:8000">Home</a>
+  <a href="webcam.html">Webcam</a>
+  <a href="info.html">Info</a>
+  <a href="../webapp" target="_blank">WiFi System</a>
+    </div>
+    
+    <div class="main">
+    
+        <h1>★Webcam★</h1>
+        <h2 id="TS">Time Stamp:</h2>
+        <h3 id="timestamp">####</h3>
+        <button id="btnWS" title="Click to start webcam" disabled="">Start Webcam</button>
+        <br>
+        <br>
+        <div id="tvimg">
+        <br>
+        <img id="pic1" alt="My webcam image" width="640" height="480">
+        <br>
+        <br>
+        </div>
+        <h4>Log</h4>
+        <textarea id="msg" rows="5" cols="50"></textarea>
+        <br>
+   
+    </div>
+    
+    <script type="text/javascript"  src= "{{ static_url('js/webcam_functions.js')}}"></script>
+
+</body>
+</html>

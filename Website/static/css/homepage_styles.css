@@ -1,0 +1,97 @@
+#msg {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    font-weight: bold;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+#JRsidebar{
+    border-radius: 25px;
+    margin-left: -12px;
+}
+
+#motto{
+    font-family: 'Bangers',cursive;
+    font-size: 32pt;
+}
+
+p{
+    font-family: 'Antic Slab', serif;
+}
+
+#review_button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15pt
+}
+
+h1 {
+    
+    font-family: 'Monoton', cursive;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25pt;
+}
+
+#stars{
+    color: gold;
+    font-size: 40pt;
+}
+
+#review_text
+{
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 30pt;
+}
+
+#HApic{
+    max-width:100%;
+}
+
+/* On smaller screens, where width is less than 500px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-width: 500px) {
+    .sidenav {padding-top: 5px; width: 75px;}
+    .sidenav a {font-size: 16px; padding: 3px; padding-bottom: 10px}
+    #JRsidebar{border-radius: 10px; margin-left: 0px; width: 70px}
+    .main {margin-left: 75px}
+    h1 {font-size: 14pt;}
+    p {font-size: 11pt;}
+    #motto{font-size: 10pt}
+    #stars {font-size: 12pt;}
+    #review_text{font-size: 14pt}
+    #review_button{font-size: 10pt}
+    h3{font-size: 14pt}
+}
